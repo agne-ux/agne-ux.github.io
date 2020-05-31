@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Measles Data visualisation </title>
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="JavaScript" href="js/portfolio.js"/>
+	</head>
+	<body>
+		<div id= "container" class="measles">
+		    <div id="navigation">
+		 	    <a class="active" href="index.html">PROJECTS</a>
+				<a href="javascript:void(0)">ABOUT</a>
+			</div>
+			  	<!---<div class="hero-image">
+			  		<div id="browserImage">
+			  			<img src="images/measlesTab.png" alt="Browser Window">
+			  		</div>
+			  	</div>--->
+			 <div class="hero-image2">
+        	<div class="top-left">
+        	  <div class="hero-square-measles">
+        	  </div>
+        	  <img class="measles-tab-image" src="images/measlesTAB.png" alt="Visualisation tab open">
+            </div>
+            <div class="top-right">     	
+              <h1 class="top-header-measles">Interactive visualisation of measles related dat</h1>
+            </div>
+	    </div>
+				<div id="measles-brief">
+				  	<div class="description1">
+				  		<div class="overview">
+				  		  <h2>Overview</h2>
+				  	    </div>
+					  	<p><span class="context"> This visualization allows to explore temporal and geographical trends related to measles and allows users to gain insights about measles outbreaks. Data displayed is published by the World Health Organisation.</span></p>
+					  	<p> <span class="overview-tag-measles">Problem:</span> During recent years media has been reporting a surge measles outbreaks, often linking it to the MMR-autosm contraversy. In many cases, coverage surrounding measles has been exaggarated and decontexualised causing public confusion.</p>
+					  	<p><span class="overview-tag-measles">Solution:</span> This visualisation allows users to explore official WHO data, such as vaccination rates and measles cases reported. It displays a global overview, provides interactive features which allow to ivestigate temporal and geographical trends and to deep dive into details.</p>
+					  	<p><span class="overview-tag-measles">Role: </span> Ideation, sketching, prototyping, implementation.</p>
+					  	<p><span class="overview-tag-measles">Team:</span> Agne Vaiciulaityte, Elisabeth Ettinger.</p>
+					  	<p><span class="overview-tag-measles">Tools:</span> Tabeau, HTML, D3.js</p>
+					</div>
+					<div id="description2-measles">
+				    	<div id="square-right-measles">
+				    		<video width="320" height="240" controls autoplay muted>
+						 	<source src="videos/MeaslesVisDemo.webm" preload="auto" type="video/webm">
+						 	Your browser does not support the video tag.
+						</video>
+				    	</div>
+				    </div>		
+			    </div>	
+				<div class="process">
+					<div class="step">
+						<p class="section">DATA</p>
+						<p>The visualisation uses offical World Health Organisation and World Bank Data. Data sets include data on measles cases reported, vaccination immunisation rates (1st and 2nd vaccination shot) and countries income.</p>
+					</div>
+					<div class="step">
+						<h2 class="section">USER GOAL AND QUESTIONS</h2>
+						<p>User task goal for the visualization is to ‘discover’ the data. Accordingly, visualisation enables users to answer open-ended questions, such as how the number of measles cases changed in their country, have similar outbreaks been observed in the past etc.The visualisation allows users to generate and verify a hypothesis based on the data displayed. User goal and questions informed the design of the visualisation, it's structure and interactive features.</p>
+						<p>In line with the user goal, the visualisation follows Shneiderman's data visualisation princple. It first provides an overview of the data which helps users to orient themselves.Then users can use time and country filters to zoom on the data of their interest. Finally, more details can be accessed via tooltips. The system provides feedback to the users, so they can see which filters have been applied.</p>
+				    </div>
+				    <div class="step">
+				    	<h2 class="section">ATTRIBUTE VISUAL ENCODING</h2>
+				    	<p>All data attrubutes have been analysed and the most approapriate visual encoding channels have been identified in order to make the visualisation perceivable. The table bellow summarasizes how visual channels chosen are justified.</p>
+					<table>
+					  <tr>
+					    <th>Data attribute</th>
+					    <th>Attribute type</th>
+					    <th>Visual encoding</th>
+					    <th>Justification</th>
+					  </tr>
+					  <tr>
+					    <td>Measles cases</td>
+					    <td>Quantitative</td>
+					    <td>Position on an aligned scale and length.</td>
+					    <td>Effective and efficient channels. Ranked in 1st and 2nd place for appropriateness in literature.</td>
+					  </tr>
+					  <tr>
+					    <td>Time</td>
+					    <td>Ordinal</td>
+					    <td>Position on a map</td>
+					    <td>Easy to perceive for users as map is a common way of positioning countries data.</td>
+					  </tr>
+					  <tr>
+					    <td>Income group</td>
+					    <td>Categorical/ordinal</td>
+					    <td>Color saturation and spatial region.</td>
+					    <td>Two channels are used efficiently: saturation is suited for display of instrincly ordered data attributes, additionally, bars are ordered from low to high income.</td>
+					 </tr>
+					 <tr>
+					 	<td>Measles cases per capita (number of measle cases /population)</td>
+					 	<td>Quantitative</td>
+					 	<td>Color saturation.</td>
+					 	<td>An effective channel for displaying quantitative data by Munzer.</td>
+					 </tr>
+					</table>
+				</div>
+				<div class="step">
+					<h2 class="section">EXPLORING IDEAS THROUGH SKETCHING</h2>
+					<div>
+						<ul class="accordion-gallery">
+							<li>
+								<a target= "_blank" href='images/vissketch1.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch2.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch3.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch4.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch5.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch6.png'></a>
+						    </li>
+						    <li>
+						    	<a target= "_blank" href='images/vissketch7.png'></a>
+						    </li>
+					    </ul>
+					</div>
+				</div>
+				<div class="step">
+					<h2 class="section">DISCOVERING DATA WITH TABLEAU</h2>
+					<p>Tableau was used to sketch the data. It provided insight into which paper sketches were effective for the data chosen and allowed to investigate data trends.</p>
+					<div class=gallery>
+						<a target="_blank" href='images/tableau1.png'>
+							<img src="images/tableau1.png" alt="Tableau Screen" width="300" height="200">
+						</a>
+						<a target="_blank" href='images/tableau2.png'>
+							<img src="images/tableau2.png" alt="Tableau Screen" width="300" height="200">
+						</a>
+					</div>
+				</div>
+			    <div class="step">
+			    	<h2 class="section">FINALISED SKETCH AND WEBSITE LAYOUT</h2>
+			    	<div class=gallery>
+						<a target="_blank" href='images/visfinalsketch.png'>
+							<img src="images/visfinalsketch.png" alt="Finalised sketch" width="300" height="200">
+						</a>
+						<a target="_blank" href='images/visdivs.png'>
+							<img src="images/visdivs.png" alt="Webpage outline" width="300" height="200">
+						</a>
+					</div>
+				</div>
+				<div class="step">
+					<h2 class="section">GATHERING FEEDBACK AND ITERATING</h2>
+					<p>After the main parts of the visualisation have been implemented some guerrila testing was done to gain user feedback. During testing sessions some participants found it difficult to follow the visualisation because they were not familiar with its subject matter. To solve the issue, a short introduction about measles was added at the top right of the website. Participants noted that it is difficult to understand a reversed graph representing immunisation coverage rates. As a result the element was reveresed back.</p>
+					<p>Even more user testing followed to test whether changes implemented solved the issues discovered. Positive feedback was recorded about the majority of the changes except the bar graphs representing immunisation coverage rates which participants found ineffective and unecesary, thus it was removed.</p>
+					<div class="gallery">
+						<a target="_blank" href='images/reversedGraph.png'>
+							<img src="images/reversedGraph.png" alt="Visualisation with reversed bar graph" width="300" height="200">
+						</a>
+						<a target="_blank" href='images/immunBarGraph.png'>
+							<img src="images/immunBarGraph.png" alt="Visualisation with immunisation coverage bar graph" width="300" height="200">
+						</a>
+						<a target="_blank" href='images/introMeasles.png'>
+							<img src='images/introMeasles.png' alt='Introduction about measles element' width="240" height="200">
+						</a>
+					</div>
+				</div>
+	        </div>
+	</body>
+</html>

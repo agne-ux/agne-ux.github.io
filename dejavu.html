@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false">
+		<title>An App for Collecting Deja Vu Experience Reports</title>
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body class="dejavu">
+	    <div class="navigation">
+	 	    <a class="active" href="index.html">PROJECTS</a>
+			<a href="javascript:void(0)">ABOUT</a>
+		</div>    
+        <div class="hero-image2">
+        	<div class="top-left">
+        	  <div class="square sq-left">
+        	  </div>
+        	  <img class="hero-phone1" src="images/dejaPhone1.png" alt="App homepage mock">
+        	  <img class="hero-phone2" src="images/dejaPhone2.png" alt="App reporting page mock">
+            </div>
+            <div class="top-right">     	
+              <h1 class="top-header">An App for Collecting Deja Vu Experience Reports</h1>
+            </div>
+	    </div>
+		<div class="brief">
+		  	<div class="description1">
+		  		<div class="overview">
+		  			<h2>OVERVIEW</h2>
+		  		</div>
+			  	<p class="context" id="dejavu"> During a user centered design course at the university of St Andrews, me and a team of three other students were tasked to design a tool for recording deja vu experiences for O'Connor Memory Judgements Lab. Deja vu is a phenomenon when the brain interprets an experience occurring as something that has already happened in the past. Researching such experiences is difficult as they are rare and occur suddenly.</p>
+				<p><span class="overview-tag">Goal:</span> Designing a system which allows users to report deja vu experiences.</p>
+			  	<p><span class="overview-tag">Problem:</span> Researchers investigating deja vu phenomenon currenly rely on adhoc self reportive methods for data collection, such as online surveys. Meaning, the data collected is based on vague recollections and is highly unreliable.</p>
+			  	<p><span class="overview-tag">Solution:</span> Two solutions have been designed, they both are phone apps and share similar features, except that one of the apps has dual purpose of serving as both a diary app and a deja vu recording tool. Such dual utility was designed in order to expand the potential user base.</p>
+                <p><span class="overview-tag">Role:</span> User research, ideation, prototyping, usability testing.</p>
+			  	<p><span class="overview-tag">Team:</span> Hantao Sun, Nazhath Haneef, Yaxiong Lei, Agne Vaiciulaityte.</p>
+			  	<p><span class="overview-tag">Tools:</span> Sketch, Balsamique, Camtasia.</p>
+			</div>
+			<!---<div id="description2">
+			  	<p>Role: user research, ideation, prototyping conservative solution, usability testing.</p>
+			  	<p>Team: Hantao Sun, Nazhath Haneef, Yaxiong Lei, Agne Vaiciulaityte.</p>
+			  	<p>Tools: Sketch, Balsamique, Camtasia.
+		    </div>---->
+		    <div class="description2">
+		    	<div class="square sq-right">
+		    	</div>
+		    	<!---<img class="right-phone2" src="images/creative-phone-2.png" alt="Report page mock">--->
+		    	<img class="right-phone1" src="images/phone-diary-1.png" alt="App homepage mock">
+		    </div>		
+        </div>
+        <div class="process">
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">GATHERING CLIENT REQUIREMENTS</p>
+        		</div>
+        		<div class="right-text">
+        			<p> The research began by conducting a field visit to deja vu research labs at the university, where we have observed the researchers workflows and interviewed them to extract system requirements. To gain a deeper understanding of the domain, we have collected and analysed relevant academic papers and research materials, such as questionnaires, ethics forms etc.</p>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">USER INTERVIEWS</p>
+        		</div>
+        		<div class="right-text">
+        			<p> Six semi-structured interviews have been conducted to gather information about user requirements and needs. Questionnaires covered topics such as overall use of technology, past deja vu experiences, past experiences of participating in any research etc. All interviews were audio recorded and transcribed.</p>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section"> AFFINITY DIAGRAM </p>
+        			<p>I lead an affinity diagram workshop during which the team synthesized interview notes and transcripts into work activity notes which then were organised on a white board. The diagram helped to consolidate information and identify re-emergent data patterns.</p> 
+        		</div>
+        		<div class="right-text">
+        				<a target="_blank" href='images/visfinalsketch.png'>
+							<img class="single" src="images/affinityDiagram.jpg" alt="Affinity diagram image" width="504px">
+						</a>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">KEY INSIGHTS</p>
+        		</div>
+        		<div class="right-text">
+        			<div id="needs">
+	        			<p>Users need to be provided with some <span class="highlighted">information about deja vu</span> because they may not clearly understand what it is or would like to learn more about it.</p>
+	        			<p>Users need <span class="highlighted"> reminders about having the tool for recording </span> deja vu experiences as they might forget to do so due to the <span class="highlighted">infrequency of the experiences.</span></p>
+	        			<p>Half of the research participants kept a diary and felt that they <span class="highlighted"> would record deja vu in their diary.</span></p>
+	        			<p>Researchers need <span class="highlighted">a large quantity of responses</span> and are less concerned with the depth of reports, so the tool needs to appeal to a wide audience, possibly by proving some utility or fun features.</p>
+	        			<p>Users need questions to be designed in an engaging format which requires <span class="highlighted">little effort</span>, so they would be continiously involved in the research.</p>
+	        			<p>Users need <span class="highlighted">a transparent personal data management,</span> so they would feel comfortable in using the tool.</p>
+	        			<p>Users need to <span class="highlighted">be able to provide information in different formats,</span> so they could capture the complexity of the experiences and would spend the minimum amount of time typing text responses.</p>
+	        			<p>Users need to be able to add details to the reports ad hoc as in some situations they may be <span class="highlighted"> unable to report it immediately</span>.</p>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section"> FLOW DIAGRAM<p>
+        			<p> I modelled a flow diagram to illustrate the flow of the information.</p>
+        		</div>
+        		<div class="right-text">
+        			<a target="_blank" href='images/visfinalsketch.png'>
+						<img class="single" src="images/flowDiagram.png" alt="Affinity diagram image" width="510px">
+					</a>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">MOOD BOARD</p>
+        			<p>From the start of the project an inspiration board has been created on Pintinterest where the team members pinned inspirations. Later, during a meeting we discussed and hand picked the most fitted materials. I assembeled those into a mood board.</p>
+        		</div>
+        		<div class="right-text">
+        			<a target="_blank" href='images/visfinalsketch.png'>
+						<img class="single" src="images/moodBoard.png" alt="mood board" width="510px">
+					</a>
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">SCENARIO SKETCHES</p>
+        			<p>Scenario sketches, which illustrate anticipated use cases, were used to generate feature ideas.</p>
+        		</div>
+        		<div class="right-text">
+        			<div class="gallery-story-sketches">
+						<a target="_blank" href='images/storySketchL.png'>
+							<img src="images/storySketchL.png" alt="Story sketch-deja vu on the go" width="300" height="200">
+						</a>
+						<div class="desc">User experiences deja vu on the go and reports it on the spot.</div>
+					</div>
+					<div class="gallery-story-sketches">
+						<a target="_blank" href='images/storyMeeting.jpg'>
+							<img src="images/storyMeeting.jpg" alt="Usage story-Experiencing deja vu in a meeting" width="300" height="200">
+						</a>
+					    <div class="desc">User experiences deja vu in a business meeting, he opens the app and notes the time. Later, the app reminds him to add more details.</div>
+					</div>
+					<div class="gallery-story-sketches">
+						<a target="_blank" href='images/commuteStory.jpg'>
+							<img src='images/commuteStory.jpg' alt="story sketch-commuting and journaling" width="300" height="200">
+						</a>
+					    <div class="desc">User is commuting and takes some time to note down her day, including a deja vu she experienced in the morning.</div>
+					</div>
+					<div class="gallery-story-sketches">
+						<a target="_blank" href='images/reminderStory.jpg'>
+							<img src='images/reminderStory.jpg' alt="story sketch-commuting and journaling" width="300" height="200">
+						</a>
+					    <div class="desc">User is doing homework and receives a reminder about the app. He remembers a recent deja vu experience and reports it.</div>
+					</div>
+				</div>
+			</div>
+			<div class="step">
+				<div class="left-text">
+					<p class="section"> SOLUTION SKETCHES</p>
+					<p>To explore ideas, everybody sketched different design concepts. I was responsible for sketching two concepts: a diary app with a mood tracker and an app which would generate a song based on a participant's response.</p>
+					<p>All sketches were discussed during a design retrospect. Based on the feedback, we collaboratively sketched two final designs: a diary app where users also could report deja vu and an easy to implement app for reporting deja vu in real time.</p>
+				</div>
+				<div class="right-text">
+					<a target="_blank" href="images/slide58.jpg">
+						<img class="single" src="images/slide58.jpg" alt="pleminary and finalised sketches" width="510px">
+					</a>
+				</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section">PROTOTYPING INTERACTIONS</p>
+        			<p>Two final prototypes were designed with 'Sketch'. I was responsible for prototyping prototype on the left, the app for reporting deja vu in real time.</p>
+        		</div>
+        		<div class="right-text">
+        			<div class="gallery">
+	        			<a target="class=_blank" href="images/basicProt.png">
+	        				<img src="images/basicProt.png" alt="reporting tool prototype" width="220" height="250">
+	        			</a>
+	        			<a target="class=_blank" href="images/diaryProt.png">
+	        				<img src="images/diaryProt.png" alt="reporting tool with a diary function prototype" width="380" height="250">
+	        			</a>		
+	        		</div>	
+        		</div>
+        	</div>
+        	<div class="step">
+        		<div class="left-text">
+        			<p class="section"> USER TESTING</p>
+        		</div>
+                <div class="right-text">
+                	<p>Six user testing seesions, three for each high fidelity Sketch prototype, were run. Participants were instructed to simulate the process of reporting a deja vu experience and were asked to think out loud. During the sessions participant errors, confusion and satisfaction were noted.</p>
+                	<p>Overall, the feedback was possitive and users did not encounter any major issues which prevented them from completing the task. Ideally, more user testing or an anaysis of beta usage should follow, to investigate whether some of the minor issues discovered are representative.</p>
+                	<p>When testing the simplistic solution, one user expressed a need for bottom navigation buttons to be labelled and one found the wording of the questions unclear. The prototype was limited as did not allow to expand questions explanation box, thus such issue might not appear on an implemented version. A solution to the button issue could be adding tooltips, which woul appear upon hover. </p>  
+                	<p>Testing of the diary solution design led to similar results, one participant suggested editing some content and a button tag, which we did accordingly.</p>
+                </div>
+        	</div>
+        </div>
+            <div class="final">
+        		<p class= "section">Final designs</p>
+	        	<div class="slideshow-content slideshow-container">
+					<img class="mySlides left" src="images/des1.png">
+					<img class="mySlides left" src="images/des2.png">
+					<img class="mySlides left" src="images/des3.png">
+					<img class="mySlides left" src="images/des4.png">
+					<img class="mySlides left" src="images/des5.png">
+					<img class="mySlides left" src="images/des6.png">
+					<img class="mySlides left" src="images/des7.png">
+					<img class="mySlides left" src="images/des8.png">
+					<img class="mySlides left" src="images/des9.png">
+					<img class="mySlides left" src="images/des10.png">
+					<img class="mySlides left" src="images/des11.png">
+					<img class="skin" src="images/skin1.png">
+					<button class="button-appearance button-colors display-left" onclick="plusDivs(-1,'left')">&#10094;</button>
+					<button class="button-appearance button-colors display-right" onclick="plusDivs(1,'left')">&#10095;</button>
+					<p class="slideshow-tag"> Design 1: a simple app for reporting deja vu experieces in real time.</p>
+	            </div>
+	            <div class="slideshow-content slideshow-container">
+					<img class="mySlides right" src="images/dis1.png">
+					<img class="mySlides right" src="images/dis2.png">
+					<img class="mySlides right" src="images/dis3.png">
+					<img class="mySlides right" src="images/dis4.png">
+					<img class="mySlides right" src="images/dis5.png">
+					<img class="mySlides right" src="images/dis6.png">
+					<img class="mySlides right" src="images/dis7.png">
+					<img class="mySlides right" src="images/dis8.png">
+					<img class="mySlides right" src="images/dis9.png">
+					<img class="mySlides right" src="images/dis10.png">
+					<img class="skin" src="images/skinDis.png">
+					<button class="button-appearance button-colors display-left" onclick="plusDivs(-1,'right')">&#10094;</button>
+					<button class="button-appearance button-colors display-right" onclick="plusDivs(1,'right')">&#10095;</button>
+	                <p class="slideshow-tag"> Design 2: a diary app which could be used to report deja vu.</p>
+	            </div>
+	        </div>
+	        			<div class="footer">
+				<img src="images/footerSigned.png" height="60px">
+			</div>
+		<script type="text/javascript" src="js/portfolio.js"></script>
+    </body>
+</html>

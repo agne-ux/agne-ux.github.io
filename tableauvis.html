@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false">
+		<title>A Tableau visualisation of imprisoned, killed and missing journalists.</title>
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="JavaScript" href="js/portfolio.js"/>
+	</head>
+	<body class='tableau'>
+		    <div class="navigation">
+		 	    <a class="active" href="index.html">PROJECTS</a>
+				<a href="javascript:void(0)">ABOUT</a>
+			</div>
+			  	<!---<div class="hero-image">
+			  		<div id="browserImage">
+			  			<img src="images/measlesTab.png" alt="Browser Window">
+			  		</div>
+			  	</div>--->
+			 <div class="hero-image2">
+        	<div class="top-left">
+        	  <div class="square sq-left">
+        	  </div>
+        	  <img class="tab-image" src="images/tableauVis4.png" alt="Dashboard">
+            </div>
+            <div class="top-right">     	
+              <h1 class="top-header">Visualisation of Imprisoned, Killed and Missing Journalists</h1>
+            </div>
+	    </div>
+				<div class="brief">
+				  	<div class="description1">
+				  		<div class="overview">
+				  		  <h2>OVERVIEW</h2>
+				  	    </div>
+					  	<p><span class="context">The visualisation provides a global snapshot of cases regarding killed, missing and imprisoned journalists.</span></p>
+					  	<p><span class="overview-tag">Problem:</span> Every year, hundreds of journalists are attacked, imprisoned, or killed. Such instances are recorded by the The Committee to Protect Journalists. Visualising such data can aid the understanding of free media obstruction.</p>
+					  	<p><span class="overview-tag">Solution:</span>The dashboard includes a map displaying country count and cases mapped to specified locations, a line graph displaying global and country data changes over time, and a bar graph which displays invidual data points grouped by countries. Interactive features provided allow to zoom into the data of interest, whereas tooltips display detailed records.</p>
+					  	<p><span class="overview-tag">Role: </span> Ideation, sketching, implementation.</p>
+					  	<p><span class="overview-tag">Tools:</span> Tabeau</p>
+					</div>
+					<div class="description2">
+				    	<div class="square sq-right">
+				    		<video class="tableau-demo" width="350px" controls autoplay muted>
+						 	<source src="videos/tableauvis.mov" preload="auto">
+						 	Your browser does not support the video tag.
+						</video>
+				    	</div>
+				    </div>		
+			    </div>	
+				<div class="process">
+					<div class="step">
+						<div class="left-text">
+                          <p class="section">DATA</p>
+						</div>
+						<div class="right-text">
+						<p>The visualisation uses data published by The Committee to Protect Journalists and can be found <a href="https://cpj.org/data/methodology/">here</a>. It includes cases of journalists that have been killed, imprisoned or reported missing since 1992. The database is updated annually.</p>
+						<p>Prior to implementation, the data was cleaned and transformed with SQL and Tableau Prep.</p>
+					    </div>
+					</div>
+					<div class="step">
+						<div class= "left-text">
+							<p class= "section">USER GOAL AND QUESTIONS</p>
+						</div>
+						<div class= "right-text">
+						   <p>The design of the visual assumes that the user's main goal is to discover the data, meaning  for some trends and patterns, trying to generate and verify a hypothesis. Accordingly, visualisation enables users to answer open-ended questions, such as which countries have the highest journalist imprisoment rates, how events of interest effect the safety journalists, which countries are unsafe for foreign media to work in etc. The user goal and anticipated questions informed the design of the visualisation, its structure and interactive features.</p>
+						   <p>In line with the user goal, the visualisation follows Shneiderman's data visualisation principle. First, it provides an overview of the data, helping users to orient themselves. Then, users can use time, country, category filters to zoom in on the data of their interest. More details can be accessed via tooltips.</p>
+					    </div>
+					</div>
+					<div class="step">
+						<div class= "left-text">
+						<p class="section">ATTRIBUTE VISUAL ENCODING</p>
+				    	<p>All data attrubutes have been analysed and the most approapriate visual encoding channels have been identified in order to make the visualisation perceivable. Table on the right summarasises how the visual channels are justified.</p>
+						</div>
+						<div class= "right-text">
+						<div class="responsive-container-table">
+						<table>
+						  <tr>
+						    <th>Data attribute</th>
+						    <th>Attribute type</th>
+						    <th>Visual encoding</th>
+						    <th>Justification</th>
+						  </tr>
+						  <tr>
+						    <td>Number of cases per country</td>
+						    <td>Quantitative</td>
+						    <td>Color saturation (map), and area size (bar graph consisting aligned squares), position on an aligned scale (line graph).</td>
+						    <td>Expressive and efficient use of channels.</td>
+						  </tr>
+						  <tr>
+						    <td>Number of cases per location</td>
+						    <td>Quantitative</td>
+						    <td>Color saturation and area size.</td>
+						    <td>Expressive and efficient use of channels.</td>
+						  </tr>
+						  <tr>
+						    <td>Time</td>
+						    <td>Ordinal</td>
+						    <td>Position on a common scale.</td>
+						    <td>The most effective channel for displaying ordered data according to Munzer.</td>
+						  </tr>
+						  <tr>
+						    <td>Country</td>
+						    <td>Categorical/ordinal</td>
+						    <td>Position on a map and colour hue (bar graph)</td>
+						    <td>Maps are commonly used for organising country data, thus it is justified. Color hue chosen to encode the countries violates 7 distinguishable colour rule, thus choice is problematic. </td>
+						 </tr>
+						 <tr>
+						 	<td>Measles cases per capita (number of measle cases /population)</td>
+						 	<td>Quantitative</td>
+						 	<td>Color saturation</td>
+						 	<td>An effective channel for displaying quantitative data according to Munzer.</td>
+						 </tr>
+					    </table>
+					</div>
+				    </div>
+				</div>
+				<div class="step">
+					<div class="left-text">
+					  <p class="section">EXPLORING IDEAS THROUGH SKETCHING</p>
+				    </div>
+					<div class="right-text">
+						<div class="gallery3">
+							<a target="_blank" href='images/paper1.jpg'>
+								<img src="images/paper1.jpg" alt="paper sketch" width="200" height="150">
+							</a>
+							<a target="_blank" href='images/paper2.jpg'>
+								<img src="images/paper2.jpg" alt="paper sketch" width="200" height="150">
+							</a>
+							<a target="_blank" href='images/paper3.png'>
+								<img src="images/paper3.png" alt="paper sketch" width="200" height="150">
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="step">
+					<div class="left-text">
+						<p class="section">IMPLEMENTATION WITH TABLEAU</p>
+					</div>
+					<div class="right-text">
+						<p>Due to the limitations of the software changes had to be made to orginal design ideas and some work arounds had to be used, such as layering diferent graphs, which affected the usability of the filters.</p>
+					</div>
+				</div>
+			</div>
+			<div class="case-images">
+		        <div class="usecase-intro">
+		        	<p class="use-case-heading">USE CASE</p>
+		        	<p class="use-case-description">By inspecting the visualisation users can generate and/or support a hypothesis. To illustrate this, let's take Turkey as an example.</p>
+		        </div>
+				<div class="vistab global">
+					<a target="_blank" href='images/Dash1.png'>
+						<img class="dash" id="dash1" src="images/Dash1.png" alt="Global overview dashboard" width="100%">
+					</a>
+					<div class="dash-container">
+						<p>1. In the global overview map and the line graph,  Turkey stands out as the country with the highest amount of cases. Comparison of the global and Turkey's trend lines indicates that Turkey shapes the global trend.</p>
+					</div>
+				</div>
+				<div class='vistab local'>
+					<a target="_blank" href='images/Dash2.png'>
+						<img class="dash" id="dash2" src="images/Dash2.png" alt="Global overview dashboard" width="100%">
+					</a>
+					<div class="dash-container">
+						<p>2. Upon a visual inspection of the line graph and an application of the country filter (Turkey) it becomes clear that the overall number of cases since 2016 jumped from 1 to 68. This allows to infer that some significant event occured in Turkey in 2016. This event was a failed coup attempt staged against the Turskish president Erdogan in July.</p>
+					</div>
+				</div>
+				<div class="vistab category">
+					<a target="_blank" href='images/Dash3.png'>
+						<img class="dash" id="dash3" src="images/Dash3.png" alt="Global overview dashboard" width="100%">
+					</a>
+					<div class="dash-container">
+						<p>3. Experimenting with the application of missed/ killed/imprisoned category filters shows that all case since 2016 are imprisonment. This reflects mass arrests carried by the Turkish goverment after the coup attempt.<p>
+					</div>
+				</div>
+			</div>
+					<div class="footer">
+			<img src="images/footerSigned.png" height="60px">
+		</div>
+	</body>
+</html>
