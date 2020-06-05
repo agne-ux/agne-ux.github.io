@@ -1268,7 +1268,7 @@ color: white;
 @media screen and (max-width: 600px) {
   .top-right  {
     width: 100%;
-    jsutify-content: center;
+    justify-content: center;
   }
 }
 
