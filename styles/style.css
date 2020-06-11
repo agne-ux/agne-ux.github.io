@@ -1305,7 +1305,7 @@ color: white;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .process {
     height: auto;
     display: flex;
@@ -1416,7 +1416,7 @@ color: white;
   .tableau .footer {
     background-color: rgba(244,244,212, 0.7);
   }
-  
+
    .tableau .description2 {
     width: 100%;
     padding: 0;
