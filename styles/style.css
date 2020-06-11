@@ -1250,7 +1250,7 @@ color: white;
 
  /*responsive measles*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .hero-image2  {
     height: auto;
     display: flex;
@@ -1259,13 +1259,13 @@ color: white;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 786px) {
   .top-left  {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .top-right  {
     width: 100%;
     justify-content: center;
